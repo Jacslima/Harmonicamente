@@ -1,0 +1,169 @@
+LOGIN:
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/img/icon(3).png" type="image/x-icon">
+    <link rel="stylesheet" href="login.css">
+    <title>Login</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="assets/img/Icon.png" alt="">
+            <h1><span style="color: #60B5FF;">HARMONICA</span>MENTE</h1>
+        </div>
+
+        <div class="links">
+            <ul>
+                <li><a href="index.html">Pagina inicial</a></li>
+                <li><a href="">Sobre o projeto</a></li>
+                <li><a href="">Fundador</a></li>
+                <li><a href="">Contate-nos</a></li>
+                <li><a id="principal" href="login.html">Login</a></li>
+                <li><a href="cadastro.html">Cadastro</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="paginaLogin">
+        <div class="login">
+            <div class="texto">
+                <h1>Bem-vindo</h1>
+                <p id="Pcad"> Não tem cadastro? <a href="cadastro.html"><b>Cadastrar</b></a></p>
+                <input type="text" placeholder="Email" id="email_input">
+                <input type="password" placeholder="Senha" id="senha_input">
+                <button onclick="entrar()">Login</button>   
+                <p id="Psenha">Esqueceu a senha? <a href="https://mail.google.com/mail/u/0/?ogbl#inbox?compose=CllgCJZZQFZQTdPVbXfDcGfmHkNKwfdmrtllvFfGhlkJspCxNsZBFMppgKrDqKcNqrVchNHZcQq" target="_blank">Esqueci a senha</a></p>
+            </div>
+            <div class="gif">
+                <img src="assets/img/LoginGif.gif" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<script>
+
+
+    function entrar() {
+
+        var emailVar = email_input.value;
+        var senhaVar = senha_input.value;
+
+        if (emailVar == "" || senhaVar == "") {
+            alert(`Preencha todos os campos!`);
+            return false;
+        }
+        // else {
+        //     setInterval(sumirMensagem, 5000)
+        // }
+
+        console.log("FORM LOGIN: ", emailVar);
+        console.log("FORM SENHA: ", senhaVar);
+
+        fetch("/usuarios/autenticar", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                emailServer: emailVar,
+                senhaServer: senhaVar
+            })
+        }).then(function (resposta) {
+            console.log("ESTOU NO THEN DO entrar()!")
+
+            if (resposta.ok) {
+                console.log(resposta);
+                alert(`Login realizado com sucesso!`);
+
+                resposta.json().then(json => {
+                    console.log(json);
+                    console.log(JSON.stringify(json));
+                    sessionStorage.EMAIL_USUARIO = json.email;
+                    sessionStorage.NOME_USUARIO = json.nome;
+                    sessionStorage.ID_USUARIO = json.id;
+
+                    setTimeout(function () {
+                        window.location = "blog.html";
+                    }, 1000); // apenas para exibir o loading
+
+                });
+
+            } else {
+
+                console.log("Houve um erro ao tentar realizar o login!");
+
+                resposta.text().then(texto => {
+                });
+            }
+
+        }).catch(function (erro) {
+            console.log(erro);
+        })
+
+        return false;
+    }
+
+
+</script>
+
+CONTROLLERS
+
+var usuarioModel = require("../models/usuarioModel");
+var aquarioModel = require("../models/aquarioModel");
+
+function autenticar(req, res) {
+    var email = req.body.emailServer;
+    var senha = req.body.senhaServer;
+
+    if (email == undefined) {
+        res.status(400).send("Seu email está undefined!");
+    } else if (senha == undefined) {
+        res.status(400).send("Sua senha está indefinida!");
+    } else {
+
+        usuarioModel.autenticar(email, senha)
+            .then(
+                function (resultadoAutenticar) {
+                    console.log(`\nResultados encontrados: ${resultadoAutenticar.length}`);
+                    console.log(`Resultados: ${JSON.stringify(resultadoAutenticar)}`); // transforma JSON em String
+
+                    if (resultadoAutenticar.length == 1) {
+                        console.log(resultadoAutenticar);
+
+                        // aquarioModel.buscarAquariosPorEmpresa(resultadoAutenticar[0].empresaId)
+                        //     .then((resultadoAquarios) => {
+                        //         if (resultadoAquarios.length > 0) {
+                                    res.json({
+                                        id: resultadoAutenticar[0].id,
+                                        email: resultadoAutenticar[0].email,
+                                        nome: resultadoAutenticar[0].nome,
+                                        senha: resultadoAutenticar[0].senha,
+                                    });
+                                // } else {
+                                //     res.status(204).json({ aquarios: [] });
+                                // }
+                            // })
+                    } else if (resultadoAutenticar.length == 0) {
+                        res.status(403).send("Email e/ou senha inválido(s)");
+                    } else {
+                        res.status(403).send("Mais de um usuário com o mesmo login e senha!");
+                    }
+                }
+            ).catch(
+                function (erro) {
+                    console.log(erro);
+                    console.log("\nHouve um erro ao realizar o login! Erro: ", erro.sqlMessage);
+                    res.status(500).json(erro.sqlMessage);
+                }
+            );
+    }
+
+}

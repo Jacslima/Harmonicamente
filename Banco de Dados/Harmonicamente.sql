@@ -9,23 +9,14 @@ email VARCHAR(45) NOT NULL,
 senha CHAR(8) NOT NULL
 )auto_increment = 1;
 
-CREATE TABLE concerto 
-(idConcerto INT primary key auto_increment,
-fkUsuario INT, CONSTRAINT fkUsuario foreign key (fkUsuario) references usuario (idUsuario),
-nome VARCHAR(45) NOT NULL,
-descricao VARCHAR(30) NOT NULL,
-endereco VARCHAR(60) NOT NULL,
-dtHora DATETIME NOT NULL
+CREATE TABLE formulario 
+(idFormulario INT primary key auto_increment,
+musicaFavorita varchar(45),
+escala INT,
+concertos char(3),
+fkUsuario INT, CONSTRAINT fkUsuario foreign key (fkUsuario) references usuario (idUsuario)
 )auto_increment = 10;
 
-CREATE TABLE analytics 
-(idAnalytics INT auto_increment,
-curtida INT, 
-interrese INT,
-fkUsuario INT, CONSTRAINT fkU foreign key (fkUsuario) references usuario (idUsuario),
-fkConcerto INT, CONSTRAINT fkConcerto foreign key (fkConcerto) references concerto (idConcerto),
-Primary key (idAnalytics, fkUsuario, fkConcerto)
-)auto_increment = 100; 
 
 CREATE TABLE forum 
 (idForum INT primary key auto_increment,
@@ -41,12 +32,11 @@ titulo VARCHAR(45) NOT NULL,
 mensagem VARCHAR(200) NOT NULL,
 dtCricao TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
 PRIMARY KEY(idMensagem, fkUsuario, fkForum)
-)auto_increment = 2000;
+)auto_increment = 100;
 
 INSERT INTO forum (nome) VALUES 
 ('Relatos'),
 ('Duvidas'),
-('Auto Ajuda'),
-('Concertos');
+('Auto Ajuda');
 
-
+SELECT * FROM usuario;

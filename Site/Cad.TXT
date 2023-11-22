@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/img/icon(3).png" type="image/x-icon">
+    <link rel="stylesheet" href="cadastro.css">
+    <title>Cadastro</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="assets/img/Icon.png" alt="">
+            <h1><span style="color: #60B5FF;">HARMONICA</span>MENTE</h1>
+        </div>
+
+        <div class="links">
+            <ul>
+                <li><a href="index.html">Pagina inicial</a></li>
+                <li><a href="">Sobre o projeto</a></li>
+                <li><a href="">Fundador</a></li>
+                <li><a href="">Contate-nos</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a id="principal" href="cadastro.html">Cadastro</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="paginaCadastro">
+        <div class="Cadastro">
+            <div class="gif">
+                <img src="assets/img/gifCadastro.gif" alt="">
+            </div>
+            <div class="texto">
+                <h1>Feliz em ter você aqui</h1>
+                <p id="Pcad"> Já tem uma conta? <a href="login.html"><b>Login</b></a></p>
+                <input type="text" placeholder="Nome" id="nome_input">
+                <input type="text" placeholder="Email" id="email_input">
+                <input type="password" placeholder="Senha" id="senha_input">
+                <button onclick="cadastrar()">Cadastrar</button>   
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<script>
+    function cadastrar() {
+  
+      //Recupere o valor da nova input pelo nome do id
+      // Agora vá para o método fetch logo abaixo
+      var nomeVar = nome_input.value;
+      var emailVar = email_input.value;
+      var senhaVar = senha_input.value;
+      if (
+        nomeVar == "" ||
+        emailVar == "" ||
+        senhaVar == "" 
+      ) {
+        return false;
+      }
+      // Enviando o valor da nova input
+      fetch("/usuarios/cadastrar", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          // crie um atributo que recebe o valor recuperado aqui
+          // Agora vá para o arquivo routes/usuario.js
+          nomeServer: nomeVar,
+          emailServer: emailVar,
+          senhaServer: senhaVar,
+        }),
+      })
+        .then(function (resposta) {
+          console.log("resposta: ", resposta);
+  
+          if (resposta.ok) {
+        
+              alert(`Cadastro realizado com sucesso! Redirecionando para tela de Login...;`)
+
+            setTimeout(() => {
+              window.location = "login.html";
+            }, "2000");
+  
+          } else {
+            throw "Houve um erro ao tentar realizar o cadastro!";
+          }
+        })
+        .catch(function (resposta) {
+          console.log(`#ERRO: ${resposta}`);
+        });
+  
+      return false;
+    }
+  </script>
+
+---------------------------------------
+
+MODELS
+
+// Coloque os mesmos parâmetros aqui. Vá para a var instrucao
+function cadastrar(nome, email, senha) {
+    console.log("ACESSEI O USUARIO MODEL \n \n\t\t >> Se aqui der erro de 'Error: connect ECONNREFUSED',\n \t\t >> verifique suas credenciais de acesso ao banco\n \t\t >> e se o servidor de seu BD está rodando corretamente. \n\n function cadastrar():", nome, email, senha);
+    
+    // Insira exatamente a query do banco aqui, lembrando da nomenclatura exata nos valores
+    //  e na ordem de inserção dos dados.
+    var instrucao = `
+        INSERT INTO usuario (nome, email, senha) VALUES ('${nome}', '${email}', '${senha}');
+    `;
+    console.log("Executando a instrução SQL: \n" + instrucao);
+    return database.executar(instrucao);
+}
+
+module.exports = {
+    autenticar,
+    cadastrar
+};
+
+---------------------------------------
+CONTROLLERS 
+
+function cadastrar(req, res) {
+    // Crie uma variável que vá recuperar os valores do arquivo cadastro.html
+    var nome = req.body.nomeServer;
+    var email = req.body.emailServer;
+    var senha = req.body.senhaServer;
+    // Faça as validações dos valores
+    if (nome == undefined) {
+        res.status(400).send("Seu nome está undefined!");
+    } else if (email == undefined) {
+        res.status(400).send("Seu email está undefined!");
+    } else if (senha == undefined) {
+        res.status(400).send("Sua senha está undefined!");
+    } else {
+
+        // Passe os valores como parâmetro e vá para o arquivo usuarioModel.js
+        usuarioModel.cadastrar(nome, email, senha)
+            .then(
+                function (resultado) {
+                    res.json(resultado);
+                }
+            ).catch(
+                function (erro) {
+                    console.log(erro);
+                    console.log(
+                        "\nHouve um erro ao realizar o cadastro! Erro: ",
+                        erro.sqlMessage
+                    );
+                    res.status(500).json(erro.sqlMessage);
+                }
+            );
+    }
+}
+
+module.exports = {
+    autenticar,
+    cadastrar
+}
+
+---------------------------------------
+
+CONFIG.JS
+
+var mySqlConfig = {
+    host: "localhost",
+    database: "harmonicamente",
+    user: "aluno",
+    password: "sptech",
+};
+
+---------------------------------------
