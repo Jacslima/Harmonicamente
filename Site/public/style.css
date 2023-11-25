@@ -152,3 +152,59 @@
 }
 
 /* FIM HOME */
+
+.projeto {
+    height: 100vh;
+    width: 100%;
+    background-image: url(assets/img/BackgroundProjeto.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+}
+
+.informacoes {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 60px;
+}
+
+.projeto .text {
+    width: 530px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    background-color: white;
+    margin-left: 30px;
+}
+
+.projeto hr {
+    background-color: #60B5FF;
+    width: 300px;
+    height: 4px;
+}
+
+.projeto .text h2 {
+    margin-top: 30px;
+    color: #161C84;
+}
+
+.projeto .text {
+    margin-right: 20px;
+}
+
+.projeto .text p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.projetoImg img {
+    height: 400px;
+    margin-bottom: 30px;
+}
