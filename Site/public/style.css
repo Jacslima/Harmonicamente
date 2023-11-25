@@ -309,3 +309,212 @@
 }
 
 /* FIM MISSÃO, VISÃO, VALORES */
+
+/* Sobre mim */
+.fundador {
+    height: 100vh;
+    width: 100%;
+    background-image: url(assets/img/BackgroundFundador.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+}
+
+.container-fundador {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.fundador .text {
+    width: 530px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    background-color: #BDE0FF;
+    margin-left: 150px;
+}
+
+.fundador .text h4 {
+    margin-left: 40px;
+    margin-right: 50px;
+    color: #161C84;
+}
+
+.sobre-mim {
+    width: 20%;
+    height: 60%;
+    display: flex;
+    flex-direction: row;
+}
+
+.sobre-mim img {
+    position: absolute;
+    height: 360px;
+    left: 670px;
+    top: 123rem;
+    transition: 0.4s;
+}
+
+.sobre-mim img:hover {
+    height: 380px;
+    top: 122rem;
+}
+
+.redes-sociais .btn {
+    height: 300px;
+    width: 200px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.redes-sociais .btn button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    width: 180px;
+    height: 35px;
+    border-radius: 5px;
+    margin-top: 15px;
+    font-weight: 500;
+    transition: 0.4s;
+    color: white;
+    background-color: #60B5FF;
+
+}
+
+.redes-sociais .btn button:hover {
+    background-color: #BDE0FF
+}
+
+#bt3 {
+    margin-bottom: 10px;
+}
+
+#bt3 img {
+    margin-right: 25px;
+
+}
+
+.redes-sociais .btn img {
+    height: 20px;
+    margin-left: 20px;
+    margin-right: 35px;
+}
+
+.redes-sociais .btn a {
+    text-decoration: none;
+    color: #161C84;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+/* Fotos minhas */
+.minhasFotos {
+    height: 100vh;
+    width: 100%;
+    background-image: url(assets/img/fundo.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-fotos {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.fotos {
+    height: 40%;
+    width: 50%;
+    background-color: white;
+}
+
+.fotos1 {
+    height: 40%;
+    width: 50%;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.233);
+    transition: 0.4s;
+    margin-left: 7rem;
+    margin-top: 15px;
+    background-image: url(assets/img/img01.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+   
+}
+
+.fotos:hover {
+    height: 43%;
+    width: 53%;
+}
+
+.fotos2 {
+    height: 40%;
+    width: 50%;
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.233);
+    transition: 0.4s;
+    margin-left: 7rem;
+    background-image: url(assets/img/img04.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+   
+}
+
+.fotos3 {
+    height: 40%;
+    width: 50%;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.233);
+    transition: 0.4s;
+    margin-right: 7rem;
+    margin-top: 15px;
+    background-image: url(assets/img/img02.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+   
+}
+
+.fotos4 {
+    height: 40%;
+    width: 50%;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.233);
+    transition: 0.4s;
+    margin-right: 7rem;
+    background-image: url(assets/img/img03.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    
+}
+
+#p1 {
+    margin-left: 7rem;
+    color: #161C84;
+}
+
+#pp2 {
+    margin-right: 7rem;
+    color: #161C84;
+}
