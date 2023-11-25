@@ -518,3 +518,65 @@
     margin-right: 7rem;
     color: #161C84;
 }
+
+/* Página Final */
+
+.telaFinal{
+    height: 100vh;
+    width: 100%;
+    background-image: url(assets/img/fundoTF.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.telaFinal .frase {
+    height: 75%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.telaFinal h1 {
+    color: #161C84;
+    margin-top: 15rem;
+    margin-bottom: 2rem;
+}
+
+.frase button {
+    background-color: #60B5FF;
+    width: 160px;
+    height: 35px;
+    border-radius: 5px;
+    margin-top: 25px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.5s;
+    margin-left: 32rem;
+}
+
+.frase button:hover {
+    background-color: #afe1fc;
+}
+
+
+.footer {
+    height: 15%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid #BDE0FF;
+}
+
+.footer p {
+    color: #161C84;
+}
