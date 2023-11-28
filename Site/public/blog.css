@@ -1,0 +1,1039 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-color: #f1f1f153;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+.sidebar-container {
+    position: fixed;
+    width: 280px;
+    height: 100%;
+    background-color: #60B5FF;
+    z-index: 1;
+}
+
+.content {
+    margin-left: 280px; 
+    width: calc(100% - 280px);
+}
+
+.info {
+    height: 100vh;
+    width: 100%;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    width: 100%;
+    background-color: white;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.233);
+}
+
+.user {
+    width: 220px;
+    height: 70px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.user img {
+    height: 50px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+
+.BarraIcon {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.BarraIcon img {
+    height: 80px;
+}
+
+.BarraIcon h2 {
+    color: #161C84;
+    margin-left: 10px;
+}
+
+.user h3 {
+    color: #60B5FF;
+}
+
+/* FIM NAVBAR */
+.menuLateral {
+    height: 192.5%;
+    width: 280px;
+   background-color: #60B5FF;
+}
+
+.links {
+    width: 100%;
+    height: 100%;
+}
+
+#aqui {
+    color:  #161C84;
+}
+
+.links ul {
+    list-style-type: none;
+}
+
+.itemMenu {
+    display: flex;
+    height: 80px;
+    align-items: center;
+    margin-bottom: 40px;
+    transition: 0.3s;
+}
+
+.itemMenu:hover {
+    background-color: #BDE0FF;
+}
+
+
+.itemMenu a{
+    display: flex;
+    color: white;
+    text-decoration: none;
+}
+
+.itemMenu a .link{
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.itemMenu a .icon{
+    font-size: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+/* FIM MENU LATERAL */
+
+.textos {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    background-image: url(assets/img/blogFundo.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.textos img {
+    height: 420px;
+    margin-right: 20px;
+    margin-bottom: 60px;
+    transition: 0.4s;
+}
+
+.textos img:hover {
+    height: 440px;
+
+}
+
+.textos .text {
+    width: 490px;
+    height: 270px;
+    border-radius: 10px;
+    margin-left: 30px;
+    margin-bottom: 60px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    background-color: white;
+}
+
+.textos hr {
+    background-color: #60B5FF;
+    width: 300px;
+    height: 4px;
+}
+
+.textos .text h2 {
+    margin-top: 30px;
+    color: #161C84;
+    transition: 0.3s;
+}
+
+.textos .text h2:hover {
+    color: #BDE0FF;
+}
+
+.textos .text p {
+    font-size: 15px;
+    margin-top: 25px;
+    margin-left: 20px;
+    font-weight: 400;
+    transition: 0.3s;
+    margin-right: 20px;
+    color: #161C84;
+    text-align: justify;
+}
+
+.textos .text p:hover {
+    color: #60B5FF;
+}
+
+/* TEXTO 02 */
+
+.textos2 {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+}
+
+.textos2 img {
+    height: 350px;
+    margin-left: 55px;
+    transition: 0.4s;
+}
+
+.textos2 img:hover {
+    height: 370px;
+
+}
+
+.textos2 .text {
+    width: 520px;
+    height: 285px;
+    font-weight: 400;
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    background-color: white;
+}
+
+.textos2 hr {
+    background-color: #60B5FF;
+    width: 300px;
+    height: 4px;
+}
+
+.textos2 .text h2 {
+    margin-top: 30px;
+    color: #161C84;
+    transition: 0.3s;
+}
+
+.textos2 .text h2:hover {
+    color: #BDE0FF;
+}
+
+.textos2 .text p {
+    font-size: 15px;
+    margin-top: 25px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-weight: 400;
+    color: #161C84;
+    transition: 0.3s;
+    text-align: justify;
+}
+
+.textos2 .text p:hover {
+    color: #60B5FF;
+}
+
+/* TEXTO 03 */
+
+.textos3 {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    background-image: url(assets/img/fundo.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.textos3 .text {
+    width: 540px;
+    height: 285px;
+    font-weight: 400;
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    background-color: white;
+}
+
+.textos3 hr {
+    background-color: #60B5FF;
+    width: 360px;
+    height: 4px;
+}
+
+.textos3 .text h2 {
+    margin-top: 30px;
+    color: #161C84;
+    transition: 0.3s;
+}
+
+.textos3 .text h2:hover {
+    color: #BDE0FF;
+}
+
+.textos3 .text p {
+    font-size: 15px;
+    margin-top: 25px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-weight: 400;
+    color: #161C84;
+    transition: 0.3s;
+    text-align: justify;
+}
+
+.textos3 .text p:hover {
+    color: #60B5FF;
+}
+
+/* TEXTO 04 */
+
+.textos4 {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+}
+
+.textos4 img {
+    height: 400px;
+    margin-right: 20px;
+    margin-bottom: 60px;
+    transition: 0.4s;
+}
+
+.textos4 img:hover {
+    height: 420px;
+
+}
+
+.textos4 .text {
+    width: 490px;
+    height: 280px;
+    border-radius: 10px;
+    margin-left: 30px;
+    margin-bottom: 60px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    background-color: white;
+}
+
+.textos4 hr {
+    background-color: #60B5FF;
+    width: 390px;
+    height: 4px;
+}
+
+.textos4 .text h2 {
+    margin-top: 30px;
+    color: #161C84;
+    transition: 0.3s;
+}
+
+.textos4 .text h2:hover {
+    color: #BDE0FF;
+}
+
+.textos4 .text p {
+    font-size: 15px;
+    margin-top: 25px;
+    margin-left: 20px;
+    font-weight: 400;
+    transition: 0.3s;
+    margin-right: 20px;
+    color: #161C84;
+    text-align: justify;
+}
+
+.textos4 .text p:hover {
+    color: #60B5FF;
+}
+
+/* TEXTO 05 */
+
+.textos5 {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    text-align: justify;
+    background-image: url(assets/img/blogFundo02.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.textos5 .text {
+    width: 480px;
+    height: 320px;
+    font-weight: 400;
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 190px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    background-color: white;
+}
+
+.textos5 hr {
+    background-color: #60B5FF;
+    width: 380px;
+    height: 4px;
+}
+
+.textos5 .text h2 {
+    margin-top: 30px;
+    color: #161C84;
+    transition: 0.3s;
+}
+
+.textos5 .text h2:hover {
+    color: #BDE0FF;
+}
+
+.textos5 .text p {
+    font-size: 15px;
+    margin-top: 25px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    font-weight: 400;
+    color: #161C84;
+    transition: 0.3s;
+    text-align: justify;
+}
+
+.textos5 .text p:hover {
+    color: #60B5FF;
+}
+
+/* TEXTO 6 */
+
+.textos6 {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    background-image: url(assets/img/blogFundo02.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.textos6 .text {
+    width: 540px;
+    height: 340px;
+    font-weight: 400;
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: justify;
+    background-color: white;
+}
+
+.textos6 .text1 {
+    margin-bottom: 590px;
+    margin-left: 20px;
+}
+
+.textos6 .text2 {
+    margin-top: 150px;
+    margin-right: 20px;
+}
+
+.textos6 hr {
+    background-color: #60B5FF;
+    width: 445px;
+    height: 4px;
+}
+
+.textos6 .text h2 {
+    margin-top: 30px;
+    color: #161C84;
+    transition: 0.3s;
+}
+
+.textos6 .text h2:hover {
+    color: #BDE0FF;
+}
+
+.textos6 .text p {
+    font-size: 15px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    font-weight: 400;
+    color: #161C84;
+    transition: 0.3s;
+    text-align: justify;
+}
+
+.textos6 .text p:hover {
+    color: #60B5FF;
+}
+
+/* TEXTO 07 */
+
+.textos7 {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+}
+
+.textos7 img {
+    height: 400px;
+    margin-left: 30px;
+    transition: 0.4s;
+}
+
+.textos7 img:hover {
+    height: 415px;
+
+}
+
+.textos7 .text {
+    width: 520px;
+    height: 285px;
+    font-weight: 400;
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    background-color: white;
+}
+
+.textos7 hr {
+    background-color: #60B5FF;
+    width: 300px;
+    height: 4px;
+}
+
+.textos7 .text h2 {
+    margin-top: 30px;
+    color: #161C84;
+    transition: 0.3s;
+}
+
+.textos7 .text h2:hover {
+    color: #BDE0FF;
+}
+
+.textos7 .text p {
+    font-size: 15px;
+    margin-top: 25px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-weight: 400;
+    color: #161C84;
+    transition: 0.3s;
+    text-align: justify;
+}
+
+.textos7 .text p:hover {
+    color: #60B5FF;
+}
+
+/* TEXTO 08 */
+
+.textos8  {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    background-image: url(assets/img/blogFundo03.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.textos8 .text {
+    width: 600px;
+    height: 370px;
+    font-weight: 400;
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    background-color: white;
+}
+
+.textos8 hr {
+    background-color: #60B5FF;
+    width: 440px;
+    height: 4px;
+}
+
+.textos8 .text h2 {
+    margin-top: 30px;
+    color: #161C84;
+    transition: 0.3s;
+}
+
+.textos8 .text h2:hover {
+    color: #BDE0FF;
+}
+
+.textos8 .text p {
+    font-size: 15px;
+    margin-top: 25px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-weight: 400;
+    color: #161C84;
+    transition: 0.3s;
+    text-align: justify;
+}
+
+.textos8 .text p:hover {
+    color: #60B5FF;
+}
+
+/* TEXTO 09 */
+
+.textos9 {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+}
+
+.textos9 img {
+    height: 400px;
+    margin-right: 20px;
+    margin-bottom: 60px;
+    transition: 0.4s;
+}
+
+.textos9 img:hover {
+    height: 420px;
+
+}
+
+.textos9 .text {
+    width: 490px;
+    height: 440px;
+    border-radius: 10px;
+    margin-left: 30px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    background-color: white;
+}
+
+.textos9 hr {
+    background-color: #60B5FF;
+    width: 390px;
+    height: 4px;
+}
+
+.textos9 .text h2 {
+    margin-top: 30px;
+    color: #161C84;
+    transition: 0.3s;
+}
+
+.textos9 .text h2:hover {
+    color: #BDE0FF;
+}
+
+.textos9 .text p {
+    font-size: 15px;
+    margin-top: 25px;
+    margin-left: 20px;
+    font-weight: 400;
+    transition: 0.3s;
+    margin-right: 20px;
+    color: #161C84;
+    text-align: justify;
+}
+
+.textos9 .text p:hover {
+    color: #60B5FF;
+}
+
+/* TEXTO 10 */
+
+.textos10 {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+}
+
+.textos10 img {
+    height: 400px;
+    margin-left: 30px;
+    transition: 0.4s;
+}
+
+.textos10 img:hover {
+    height: 415px;
+
+}
+
+.textos10 .text {
+    width: 520px;
+    height: 320px;
+    font-weight: 400;
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    background-color: white;
+}
+
+.textos10 hr {
+    background-color: #60B5FF;
+    width: 350px;
+    height: 4px;
+}
+
+.textos10 .text h2 {
+    margin-top: 30px;
+    color: #161C84;
+    transition: 0.3s;
+}
+
+.textos10 .text h2:hover {
+    color: #BDE0FF;
+}
+
+.textos10 .text p {
+    font-size: 15px;
+    margin-top: 25px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-weight: 400;
+    color: #161C84;
+    transition: 0.3s;
+    text-align: justify;
+}
+
+.textos10 .text p:hover {
+    color: #60B5FF;
+}
+
+/* TEXTO 11 */
+
+.textos11 {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    background-image: url(assets/img/blogFundo10.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.textos11 .text {
+    width: 540px;
+    height: 400px;
+    font-weight: 400;
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+    margin-right: 400px;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: justify;
+    background-color: white;
+}
+
+.textos11 .text h2 {
+    color: #161C84;
+    margin-top: 30px;
+    transition: 0.3s;
+}
+
+.textos11 .text h2:hover {
+    color: #BDE0FF;
+}
+
+.textos11 hr {
+    background-color: #60B5FF;
+    width: 520px;
+    height: 4px;
+}
+
+.textos11 .text p {
+    font-size: 15px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    font-weight: 400;
+    color: #161C84;
+    transition: 0.3s;
+    text-align: justify;
+}
+
+.textos11 .text p:hover {
+    color: #60B5FF;
+}
+
+/* TEXTO 12 */
+
+.textos12 {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    background-image: url(assets/img/blogFundo10.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.textos12 .text {
+    width: 540px;
+    height: 340px;
+    font-weight: 400;
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+    margin-left: 400px;
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: justify;
+    background-color: white;
+}
+
+.textos12 .text h2 {
+    margin-top: 30px;
+    color: #161C84;
+    transition: 0.3s;
+}
+
+.textos12 .text h2:hover {
+    color: #BDE0FF;
+}
+
+.textos12 hr {
+    background-color: #60B5FF;
+    width: 445px;
+    height: 4px;
+}
+
+.textos12 .text p {
+    font-size: 15px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    font-weight: 400;
+    color: #161C84;
+    transition: 0.3s;
+    text-align: justify;
+}
+
+.textos12 .text p:hover {
+    color: #60B5FF;
+}
+
+/* TEXTO 13 */
+
+.textos13 {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+}
+
+
+.textos13 .text h2 {
+    color: #161C84;
+    transition: 0.3s;
+    margin-left: 115px;
+}
+
+.textos13 .text h2:hover {
+    color: #BDE0FF;
+}
+
+.textos13 hr {
+    background-color: #60B5FF;
+    width: 430px;
+    height: 4px;
+    margin-left: 50px;
+}
+
+.textos13 iframe {
+    border-radius: 14px;
+    margin-top: 30px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.221);
+}
+
+/* TEXTO 14 */
+
+.textos14 {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    background-image: url(assets/img/RelatosBanner.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.textos14 img {
+    height: 400px;
+    margin-left: 30px;
+    margin-top: 130px;
+    transition: 0.4s;
+}
+
+.textos14 img:hover {
+    height: 415px;
+
+}
+
+.textos14 .text {
+    width: 520px;
+    height: 320px;
+    font-weight: 400;
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+    margin-top: 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    background-color: white;
+}
+
+.textos14 hr {
+    background-color: #60B5FF;
+    width: 350px;
+    height: 4px;
+}
+
+.textos14 .text h2 {
+    margin-top: 30px;
+    color: #161C84;
+    transition: 0.3s;
+}
+
+.textos14 .text h2:hover {
+    color: #BDE0FF;
+}
+
+.textos14 .text p {
+    font-size: 15px;
+    margin-top: 25px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-weight: 400;
+    color: #161C84;
+    transition: 0.3s;
+    text-align: justify;
+}
+
+.textos14 .text p:hover {
+    color: #60B5FF;
+}
+
+.efeito, .efeitoImg{
+    visibility: hidden;
+}
