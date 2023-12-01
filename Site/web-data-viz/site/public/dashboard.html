@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/img/icon(3).png" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="css/dashboard.css">
+    <title>Dashboard</title>
+</head>
+
+<body onload="qtdMensagens(), qtdPessoas()">
+    <div class="kpi">
+        <div class="card QtdDePessoasForum1">
+            <p>Quantidade de<br>
+                pessoas no forum relatos
+            </p>
+
+            <div class="text">
+                <h1 id="linha">|</h1>
+                <h1>
+                    25%
+                </h1>
+            </div>
+        </div>
+        <div class="card QtdDePessoasForum2">
+            <p>Quantidade de<br>
+                pessoas no forum dúvidas
+            </p>
+
+            <div class="text">
+                <h1 id="linha">|</h1>
+                <h1>
+                    16%
+                </h1>
+            </div>
+        </div>
+        <div class="card QtdDePessoasForum3">
+            <p>Quantidade de<br>
+                pessoas no forum ajuda
+            </p>
+
+            <div class="text">
+                <h1 id="linha">|</h1>
+                <h1>
+                    8%
+                </h1>
+            </div>
+        </div>
+    </div>
+    <div class="dash">
+        <div class="grafico-mensagem">
+            <canvas id="teste"></canvas>
+        </div>
+        <div class="grafico-pessoas">
+            <canvas id="teste02"></canvas>
+        </div>
+    </div>
+</body>
+
+</html>
+<label for=""></label>
+<script>
+
+
+    function qtdPessoas() {
+        fetch(`/grafico/exibirTotalPessoas`, { cache: 'no-store' }).then(function (response) {
+            response.json().then(function (resposta) {
+                console.log(`Dados obtidos: ${JSON.stringify(resposta)}`);
+
+                construirGraficoPessoas(resposta)
+            });
+
+        })
+    }
+
+    function construirGraficoPessoas(resposta) {
+        console.log('iniciando plotagem do gráfico...');
+
+        // Criando estrutura para plotar gráfico - labels
+        let labels = ['Cadastrados'];
+
+        // Criando estrutura para plotar gráfico - dados
+        let dados = {
+            labels: labels,
+            datasets: [{
+                label: 'Pessoas',
+                data: [],
+                fill: false,
+
+                tension: 0.1
+            }]
+        };
+
+        console.log('----------------------------------------------')
+        console.log('Estes dados foram recebidos pela funcao "obterDadosGrafico" e passados para "plotarGrafico":')
+        console.log(resposta)
+
+        // Inserindo valores recebidos em estrutura para plotar o gráfico
+        for (i = 0; i < resposta.length; i++) {
+            var registro = resposta[i];
+            qtdPessoasCadastradas = resposta[i].Pessoas;
+
+
+
+
+            dados.datasets[0].data.push(registro.Pessoas);
+
+        }
+
+        // Criando estrutura para plotar gráfico - config
+        const config = {
+            type: 'bar',
+            data: dados,
+        };
+
+        // Adicionando gráfico criado em div na tela
+        let myChart02 = new Chart(
+            document.getElementById(`teste02`),
+            config
+        );
+
+
+    }
+
+    function qtdMensagens() {
+        fetch(`/grafico/exibirTotalDeMensagens`, { cache: 'no-store' }).then(function (response) {
+            response.json().then(function (resposta) {
+                console.log(`Dados obtidos: ${JSON.stringify(resposta)}`);
+
+                construirGrafico(resposta)
+            });
+
+        })
+    }
+
+
+
+    function construirGrafico(resposta) {
+
+        console.log('iniciando plotagem do gráfico...');
+
+        // Criando estrutura para plotar gráfico - labels
+        let labels = [];
+
+        // Criando estrutura para plotar gráfico - dados
+        let dados = {
+            labels: labels,
+            datasets: [{
+                label: 'Forum',
+                data: [],
+                fill: false,
+                tension: 0.1
+            }]
+        };
+
+        // Inserindo valores recebidos em estrutura para plotar o gráfico
+        for (i = 0; i < resposta.length; i++) {
+            var registro = resposta[i];
+
+            labels.push(registro.Nome);
+            dados.datasets[0].data.push(registro.Mensagens);
+
+        }
+
+        // Criando estrutura para plotar gráfico - config
+        const config = {
+            type: 'bar',
+            data: dados,
+        };
+
+        // Adicionando gráfico criado em div na tela
+        let myChart = new Chart(
+            document.getElementById(`teste`),
+            config
+        );
+
+    }
+
+</script>

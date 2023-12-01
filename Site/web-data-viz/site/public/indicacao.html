@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/indicacao.css">
+    <link rel="shortcut icon" href="assets/img/icon(3).png" type="image/x-icon">
+    <title>Indicacão</title>
+</head>
+<body>
+  <div>
+    <form class="container">
+        <p>INDIQUE UM CONCERTO!!</p>
+        <hr><br>
+        <textarea id="text_indicacao" name="indicacao" rows="4" cols="30" maxlength="200"></textarea><br>
+        <div class="button-container">
+          <button id="buttonSubmit" onclick="enviar()">Enviar</button>
+          <p id="mensagem" style="display: none;">Obrigado!</p>
+        </div>
+     </form>
+    </div>
+</body>
+</html>
+
+<script>
+
+function enviar() {
+
+var idUsuarioVar = sessionStorage.ID_USUARIO;
+var concertoIndicadoVar = text_indicacao.value;
+
+fetch("/formulario/enviar", {
+  method: "POST",
+  headers: {
+    "Content-Type": "application/json"
+  },
+  body: JSON.stringify({
+    idUsuarioServer: idUsuarioVar,
+    concertoIndicadoServer: concertoIndicadoVar
+  })
+}).then(function (resposta) {
+  console.log("resposta: ", resposta);
+
+  if (resposta.ok) {
+
+    limparFormulario();
+
+  } else {
+
+  }
+})
+  .catch(function (resposta) {
+    console.log(`#ERRO: ${resposta}`);
+  });
+
+return false;
+}
+
+
+document.getElementById("form").addEventListener("submit", function (event) {
+event.preventDefault();
+
+setTimeout(function () {
+
+  document.getElementById("buttonSubmit").style.display = "none";
+  document.getElementById("text_indicacao").style.display = "none";
+  document.getElementById("mensagem").style.display = "block";
+},);
+});
+
+
+
+</script>

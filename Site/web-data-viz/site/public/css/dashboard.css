@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+}
+
+.kpi {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.card {
+    height: 55%;
+    width: 25%;
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.219);
+    background-color: #60b5f6;
+    transition: 0.3s;
+}
+
+.card:hover {
+    height: 57%;
+    width: 27%;
+}
+
+
+.dash {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.grafico-mensagem {
+    height: 100%;
+    width: 100%;
+    margin-left: 30px;
+}
+
+.grafico-pessoas {
+    height: 100%;
+    width: 100%;
+}
+
+.QtdDePessoasForum1 .text {
+    display: flex;
+    flex-direction: row;
+    color: white;
+}
+
+.QtdDePessoasForum1 #linha {
+    margin-left: 25px;
+    height: 40px;
+}
+
+.QtdDePessoasForum1 h1 {
+    margin-left: 10px;
+    font-size: 40px;
+}
+
+
+.QtdDePessoasForum1 h1 hr {
+    color: 4px solid #F1F1F1;
+
+}
+
+.QtdDePessoasForum1 p {
+    color: white;
+    margin-top: 15px;
+    margin-left: 25px;
+    font-size: 20px;
+}
+
+.QtdDePessoasForum2 .text {
+    display: flex;
+    flex-direction: row;
+    color: white;
+}
+
+.QtdDePessoasForum2 #linha {
+    margin-left: 25px;
+    height: 40px;
+}
+
+.QtdDePessoasForum2 h1 {
+    margin-left: 10px;
+    font-size: 40px;
+}
+
+
+.QtdDePessoasForum2 h1 hr {
+    color: 4px solid #F1F1F1;
+
+}
+
+.QtdDePessoasForum2 p {
+    color: white;
+    margin-top: 15px;
+    margin-left: 25px;
+    font-size: 20px;
+}
+
+.QtdDePessoasForum3 .text {
+    display: flex;
+    flex-direction: row;
+    color: white;
+}
+
+.QtdDePessoasForum3 #linha {
+    margin-left: 25px;
+    height: 40px;
+}
+
+.QtdDePessoasForum3 h1 {
+    margin-left: 10px;
+    font-size: 40px;
+}
+
+
+.QtdDePessoasForum3 h1 hr {
+    color: 4px solid #F1F1F1;
+
+}
+
+.QtdDePessoasForum3 p {
+    color: white;
+    margin-top: 15px;
+    margin-left: 25px;
+    font-size: 20px;
+}
+

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/img/icon(3).png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <link rel="stylesheet" href="css/blog.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="js/efeito.js" defer></script>
+    <title>Blog</title>
+</head>
+
+<body>
+    <!-- Menu Lateral -->
+    <div class="container">
+        <div class="sidebar-container">
+            <div class="menuLateral">
+                <div class="links">
+                    <ul>
+                        <li class="itemMenu">
+                            <a id="aqui" href="blog.html">
+                                <span class="icon"><i class="bi bi-house-door-fill"></i></span></span>
+                                <span class="link">Blog Home</span>
+                            </a>
+                        </li>
+                        <li class="itemMenu">
+                            <a href="forum.html">
+                                <span class="icon"><i class="bi bi-chat-fill"></i></span></span>
+                                <span class="link">Fórum</span>
+                            </a>
+                        </li>
+                        <li class="itemMenu">
+                            <a href="telaMusica.html">
+                                <span class="icon"><i class="bi bi-music-note-beamed"></i></i></span>
+                                <span class="link">Piano</span>
+                            </a>
+                        </li>
+                        <li class="itemMenu">
+                            <a href="dashboard.html">
+                                <span class="icon"><i class="bi bi-gear-fill"></i></i></span>
+                                <span class="link">Informações</span>
+                            </a>
+                        </li>
+                        <li class="itemMenu">
+                            <a href="#">
+                                <span class="icon"><span class="bi bi-box-arrow-left"></span></span>
+                                <span onclick="limparSessao()" class="link">Sair</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- NAVBAR -->
+        <div class="content">
+            <div class="info">
+                <div class="navbar">
+                    <div class="BarraIcon">
+                        <img src="assets/img/Icon.png" alt="">
+                        <h2><span style="color: #60B5FF;">HARMONICA</span>MENTE</h1>
+                        </h2>
+                    </div>
+                    <div class="user">
+                        <img src="assets/img/userImg.png" alt="">
+                        <h3>Olá,<span id="b_usuario">Usuario</span></h3>
+                    </div>
+                </div>
+                <!-- INFORMAÇÕES NO SITE -->
+                <div class="textos">
+                    <div class="projetoImg">
+                        <img class="efeitoImg" src="assets/img/BlogImg01.png" alt="">
+                    </div>
+                    <div class="text efeito">
+                        <h2>APERTE OS CINTOS! <i id="icon" class="bi bi-rocket-takeoff-fill"></i></h2>
+                        <hr>
+                        <p>Sejam bem-vindos a todo esse universo da musicoterapia!
+                            Se você está se perguntando o que é essa maravilha
+                            musical e como ela pode mexer com nossas emoções,
+                            você veio ao lugar certo. Vamos embarcar nessa
+                            viagem sonora e descobrir juntos o poder terapêutico
+                            dos sons. </p>
+                    </div>
+                </div>
+                <div class="textos2">
+                    <div class="text efeito">
+                        <h2>O COMEÇO DE TUDO <i class="bi bi-stars"></i></h2>
+                        <hr>
+                        <p>A musicoterapia não é uma invenção moderna de gênios da
+                            psicologia, mas sim uma prática que tem raízes profundas na
+                            história da humanidade. Acredita-se que os antigos gregos já
+                            usavam a música como uma ferramenta para curar a alma.
+                            Desde então, a ideia foi passando de geração em geração,
+                            até se transformar na ciência da musicoterapia que
+                            conhecemos hoje. </p>
+                    </div>
+                    <img class="efeitoImg" src="assets/img/BlogImg02.png" alt="">
+                </div>
+                <div class="textos3">
+                    <div class="text efeito">
+                        <h2>UMA VOLTA NO TEMPO<i class="bi bi-hourglass-top"></i></h2>
+                        <hr>
+                        <p>A Nossa saga musical começa lá na Grécia Antiga, onde Aristóteles,
+                            o guru da filosofia, percebeu algo incrível sobre a música: ela tinha
+                            o poder de tocar as emoções mais profundas da alma. Essa percepção sábia
+                            foi passada adiante, gerando as sementes da musicoterapia. Os antigos usavam
+                            a música não só como entretenimento, mas como uma forma de cura e expressão
+                            emocional. </p>
+                    </div>
+                </div>
+                <div class="textos4">
+                    <div class="projetoImg">
+                        <img class="efeitoImg" src="assets/img/BlogImg04.png" alt="">
+                    </div>
+                    <div class="text efeito">
+                        <h2>ARISTÓTELES E OS ESTUDOS<i class="bi bi-moon-stars-fill"></i></h2>
+                        <hr>
+                        <p>Vamos nos aprofundar na jornada de Aristóteles pelo mundo encantado
+                            da música. Este sábio filósofo grego não apenas contemplava as estrelas,
+                            mas também se deixava levar pela harmonia das notas. Seus estudos
+                            abrangentes incluíam a observação da influência da música nas emoções
+                            e comportamentos humanos.</p>
+                    </div>
+                </div>
+                <div class="textos5">
+                    <div class="text efeito">
+                        <h2>ARISTÓTELES E A MUSICA<i class="bi bi-stars"></i></i></h2>
+                        <hr>
+                        <p>Ele mergulhou nos trabalhos de seus contemporâneos,
+                            como Pitágoras, que já havia teorizado sobre a relação
+                            entre números e proporções na música. Aristóteles não apenas
+                            apreciava a música como uma forma de arte, mas percebeu que
+                            ela tinha o poder de moldar a psique humana. Em seus escritos,
+                            ele explorou como diferentes modos musicais podiam evocar diferentes
+                            emoções, contribuindo para o entendimento do impacto emocional e
+                            terapêutico da música. </p>
+                    </div>
+                </div>
+                <div class="textos6">
+                    <div class="text text1 efeito">
+                        <h2>HARMONIA AO LONGO DAS ERAS<i class="bi bi-stars"></i></i></h2>
+                        <hr>
+                        <p>Ao longo dos séculos, a música continuou sendo uma aliada poderosa na busca pela saúde
+                            mental. Na Idade Média, monges usavam cânticos gregorianos para acalmar mentes inquietas. Já
+                            no Renascimento, músicos começaram a compor peças específicas para tratar diferentes
+                            condições emocionais. É quase como se a música estivesse escrevendo sua própria história
+                            terapêutica! Entramos em uma era em que músicos começaram a compor peças específicas
+                            destinadas a tratar diferentes condições emocionais. </p>
+                    </div>
+                    <div class="text text2 efeito">
+                        <h2>HARMONIA NAS ERAS<i class="bi bi-stars"></i></i></h2>
+                        <hr>
+                        <p>É quase como se a música estivesse escrevendo sua própria história
+                            terapêutica! Entramos em uma era em que músicos começaram a compor
+                            peças específicas destinadas a tratar diferentes condições emocionais.
+                            A música tornou-se uma ferramenta terapêutica consciente, uma expressão
+                            de arte que buscava tocar não apenas os ouvidos, mas também as almas
+                            daqueles que a ouviam.</p>
+                    </div>
+                </div>
+                <div class="textos7">
+                    <div class="text efeito">
+                        <h2>COMO FUNCIONA?<i class="bi bi-lightbulb-fill"></i></h2>
+                        <hr>
+                        <p>A musicoterapia não ficou apenas na intuição e na tradição;
+                            ela deu um salto quântico quando a ciência entrou em cena.
+                            No século XX, pesquisadores começaram a explorar como a música
+                            afeta o cérebro e o corpo. Descobriu-se que a música pode ativar
+                            áreas cerebrais ligadas às emoções, memória e até mesmo à coordenação
+                            motora. </p>
+                    </div>
+                    <img class="efeitoImg" src="assets/img/blogImg07.png" alt="">
+                </div>
+                <div class="textos8">
+                    <div class="text efeito">
+                        <h2>ENTENDENDO UM POUCO MAIS<i class="bi bi-clipboard-check-fill"></i></h2>
+                        <hr>
+                        <p>A música é como uma linguagem universal que fala diretamente
+                            com a nossa alma. A musicoterapia usa sons, ritmos e melodias
+                            para criar uma ponte entre nossos sentimentos mais profundos
+                            e o mundo exterior. É como se a música fosse a chave que abre
+                            a porta dos nossos sentimentos, permitindo-nos explorar emoções
+                            e experiências de uma maneira única. quando ouvimos música, nosso
+                            cérebro libera substâncias químicas como a dopamina, o neurotransmissor
+                            da felicidade. Além disso, a música pode modular nosso sistema nervoso
+                            autônomo, influenciando batimentos cardíacos, pressão arterial e até
+                            mesmo a respiração. É uma orquestração complexa de respostas
+                            fisiológicas e emocionais. </p>
+                    </div>
+                </div>
+                <div class="textos9">
+                    <div class="projetoImg">
+                        <img class="efeitoImg" src="assets/img/blogImg09.png" alt="">
+                    </div>
+                    <div class="text efeito">
+                        <h2>MUSICA E A ALMA<i class="bi bi-heart-pulse-fill"></i></h2>
+                        <hr>
+                        <p> Os terapeutas usam essa linguagem universal para ajudar
+                            as pessoas a expressar emoções, aliviar o estresse e superar
+                            desafios mentais. Agora, vamos decifrar a ciência por trás
+                            dessa melodia terapêutica. Quando mergulhamos nos ritmos e
+                            melodias, nosso cérebro entra em ação de maneira incrível.
+                            Estudos de neurociência revelam que a música pode ativar
+                            várias áreas cerebrais, incluindo o córtex auditivo,
+                            responsável pelo processamento sonoro, e o sistema límbico,
+                            que desempenha um papel crucial nas emoções. Ao ouvirmos
+                            uma música agradável, nosso cérebro libera uma enxurrada de
+                            neurotransmissores, incluindo a dopamina, que é associada ao
+                            prazer e à recompensa. Essa "dança química" não só nos faz
+                            sentir bem, mas também pode aliviar a ansiedade e o estresse. </p>
+                    </div>
+                </div>
+                <div class="textos10">
+                    <div class="text efeito">
+                        <h2>TÉCNICAS ENVOLVENTES<i class="bi bi-brush-fill"></i></h2>
+                        <hr>
+                        <p>Os musicoterapeutas empregam uma variedade de técnicas para atender
+                            às necessidades individuais de seus clientes. A improvisação musical
+                            é uma abordagem poderosa, permitindo que os participantes expressem
+                            livremente suas emoções através da criação musical espontânea. A escuta
+                            ativa é outra técnica essencial, na qual o terapeuta atenta às respostas
+                            emocionais do cliente durante a audição de músicas selecionadas. Essas
+                            técnicas oferecem uma plataforma única para a expressão e exploração de
+                            emoções. </p>
+                    </div>
+                    <img class="efeitoImg" src="assets/img/blogImg10.png" alt="">
+                </div>
+                <div class="textos11">
+                    <div class="text text efeito">
+                        <h2>HARMONIZANDO HISTÓRIAS DE SUCESSO<i class="bi bi-globe-asia-australia"></i></h2>
+                        <hr>
+                        <p>À medida que a conscientização sobre saúde mental floresce no país, a busca por
+                            alternativas terapêuticas ganha destaque. E no epicentro dessa revolução, encontramos
+                            a musicoterapia, uma prática que vai além de consultórios, invadindo clínicas, hospitais
+                            e centros de saúde em todo o território nacional. Os relatos inspiradores de casos
+                            bem-sucedidos se multiplicam, provando que a musicoterapia não é apenas uma nota isolada,
+                            mas uma melodia completa de benefícios. Indivíduos de diferentes regiões do Brasil
+                            compartilham experiências de transformação, destacando a redução do estresse, uma melhora
+                            palpável no humor e um reforço nas habilidades de enfrentamento diante dos desafios da
+                            vida. </p>
+                    </div>
+                </div>
+                <div class="textos12">
+                    <div class="text text efeito">
+                        <h2>UMA VIAGEM MUSICAL AO SUCESSO<i class="bi bi-luggage-fill"></i></h2>
+                        <hr>
+                        <p>Visualmente, podemos observar uma verdadeira onda de aceitação e reconhecimento
+                            da musicoterapia. O número de profissionais, instituições e entusiastas que abraçam
+                            essa abordagem terapêutica está crescendo de forma exponencial. É mais do que uma
+                            tendência; é uma transformação na paisagem da saúde mental no Brasil. Em resumo,
+                            o cenário é de uma crescente onde de aceitação e entusiasmo pela musicoterapia no Brasil.
+                            É como se cada acorde tocado e cada história de sucesso compartilhada contribuísse para
+                            a construção de um quebra-cabeça crucial na promoção da saúde mental no país. </p>
+                    </div>
+                </div>
+                <div class="textos13">
+                    <div class="text efeito">
+                        <h2>VOCÊ NÃO ESTÁ SOZINHO<i class="bi bi-exclamation-lg"></i></h2>
+                        <hr>
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/_VgrxV1LCG4?si=54iITp6-HyDs5LG_"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="textos14">
+                    <div class="text text efeito">
+                        <h2>NUNCA UM ADEUS<i class="bi bi-chat-heart-fill"></i></h2>
+                        <hr>
+                        <p>Se você chegou até aqui, parabéns por embarcar nessa
+                            viagem melódica comigo! Esse caro escritor, apaixonado
+                            por música e por pessoas agradece a sua atenção. Convido
+                            você a explorar mais a fundo as muitas facetas da musicoterapia
+                            em nosso blog. A jornada musical continua em outras seções do nosso
+                            blog, então aperte o play na sua jornada de autodescoberta e descubra
+                            muito mais sobre esse universo. Nós vemos em breve! </p>
+                    </div>
+                    <img class="efeitoImg" src="assets/img/blogImg14.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<script>
+    b_usuario.innerHTML = sessionStorage.NOME_USUARIO;
+</script>

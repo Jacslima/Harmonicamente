@@ -1,0 +1,660 @@
+.fundo {
+    height: 100vh;
+    width: 100%;
+    background-color: #f1f1f181;
+}
+
+.apresentacao {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.texto{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.texto .text {
+    width: 800px;
+    height: 200px;
+    font-weight: 400;
+    font-size: 20px;
+    border-radius: 10px;
+    margin-right: 10px;
+    margin-bottom: 100px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.121);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+}
+
+.text hr {
+    background-color: #60B5FF;
+    width: 380px;
+    height: 4px;
+}
+
+.texto .text h2 {
+    margin-top: 10px;
+    color: #161C84;
+    transition: 0.3s;
+}
+
+.texto .text h2:hover {
+    color: #BDE0FF;
+}
+.texto .text p {
+    margin-top: 25px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-weight: 400;
+    color: #161C84;
+    transition: 0.3s;
+}
+
+.texto .text p:hover {
+    color: #60B5FF;
+}
+
+/* TUTORIAL */
+
+.tutorial {
+    height: 100vh;
+    width: 100%;
+    background-image: url(assets/img/fundo.png);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.teclas img {
+    height: 100px;
+}
+
+.teclas {
+    width: 87%;
+    height: 285px;
+    font-weight: 400;
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    background-color: white;
+}
+
+.teclas hr {
+    background-color: #60B5FF;
+    width: 500px;
+    height: 4px;
+}
+
+.teclas h2 {
+    margin-top: 30px;
+    color: #161C84;
+    transition: 0.3s;
+}
+
+.teclas h2:hover {
+    color: #BDE0FF;
+}
+
+.teclas p {
+    font-size: 15px;
+    margin-top: 25px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-weight: 400;
+    color: #161C84;
+    transition: 0.3s;
+    text-align: justify;
+}
+
+.teclas p:hover {
+    color: #60B5FF;
+}
+
+
+/* TUTORIAL PARTE 1 */
+
+.tutorialPart1 {
+    height: 100vh;
+    width: 100%;
+    background-image: url(assets/img/fundo.png);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.tutorialPart1 .imagem-piano img {
+    height: 250px;
+    box-shadow: 10px 10px 20px rgba(255, 255, 255, 0.815);
+}
+
+.tutorialPart1 .teclas {
+    width: 50%;
+    height: 200px;
+    font-weight: 400;
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    background-color: white;
+}
+
+.tutorialPart1 .teclas hr {
+    background-color: #60B5FF;
+    width: 300px;
+    height: 4px;
+}
+
+.tutorialPart1 .teclas h2 {
+    margin-top: 30px;
+    color: #161C84;
+    transition: 0.3s;
+}
+
+.tutorialPart1 .teclas h2:hover {
+    color: #BDE0FF;
+}
+
+.tutorialPart1 .teclas p {
+    font-size: 15px;
+    margin-top: 25px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-weight: 400;
+    color: #161C84;
+    transition: 0.3s;
+    text-align: justify;
+}
+
+.tutorialPart1 .teclas p:hover {
+    color: #60B5FF;
+}
+
+/* TUTORIAL PARTE 2 */
+
+.tutorialPart2 {
+    height: 100vh;
+    width: 100%;
+    background-image: url(assets/img/fundo.png);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.tutorialPart2 .imagem-piano img {
+    height: 300px;
+    box-shadow: 10px 10px 20px rgba(255, 255, 255, 0.815);
+}
+
+.tutorialPart2 .teclas {
+    width: 50%;
+    height: 200px;
+    font-weight: 400;
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    background-color: white;
+}
+
+.tutorialPart2 .teclas hr {
+    background-color: #60B5FF;
+    width: 300px;
+    height: 4px;
+}
+
+.tutorialPart2 .teclas h2 {
+    margin-top: 30px;
+    color: #161C84;
+    transition: 0.3s;
+}
+
+.tutorialPart2 .teclas h2:hover {
+    color: #BDE0FF;
+}
+
+.tutorialPart2 .teclas p {
+    font-size: 15px;
+    margin-top: 25px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-weight: 400;
+    color: #161C84;
+    transition: 0.3s;
+    text-align: justify;
+}
+
+.tutorialPart2 .teclas p:hover {
+    color: #60B5FF;
+}
+
+/* TUTORIAL PARTE 3 */
+
+.tutorialPart3 {
+    height: 100vh;
+    width: 100%;
+    background-image: url(assets/img/fundo.png);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.tutorialPart3 .imagem-piano img {
+    height: 300px;
+    box-shadow: 10px 10px 20px rgba(255, 255, 255, 0.815);
+}
+
+.tutorialPart3 .teclas {
+    width: 50%;
+    height: 200px;
+    font-weight: 400;
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    background-color: white;
+}
+
+.tutorialPart3 .teclas hr {
+    background-color: #60B5FF;
+    width: 300px;
+    height: 4px;
+}
+
+.tutorialPart3 .teclas h2 {
+    margin-top: 30px;
+    color: #161C84;
+    transition: 0.3s;
+}
+
+.tutorialPart3 .teclas h2:hover {
+    color: #BDE0FF;
+}
+
+.tutorialPart3 .teclas p {
+    font-size: 15px;
+    margin-top: 25px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-weight: 400;
+    color: #161C84;
+    transition: 0.3s;
+    text-align: justify;
+}
+
+.tutorialPart3 .teclas p:hover {
+    color: #60B5FF;
+}
+
+/* TUTORIAL PARTE 4 */
+
+.tutorialPart4 {
+    height: 100vh;
+    width: 100%;
+    background-image: url(assets/img/fundo.png);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.tutorialPart4 .imagem-piano img {
+    height: 250px;
+    box-shadow: 10px 10px 20px rgba(255, 255, 255, 0.815);
+}
+
+.tutorialPart4 .teclas {
+    width: 50%;
+    height: 200px;
+    font-weight: 400;
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    background-color: white;
+}
+
+.tutorialPart4 .teclas hr {
+    background-color: #60B5FF;
+    width: 300px;
+    height: 4px;
+}
+
+.tutorialPart4 .teclas h2 {
+    margin-top: 30px;
+    color: #161C84;
+    transition: 0.3s;
+}
+
+.tutorialPart4 .teclas h2:hover {
+    color: #BDE0FF;
+}
+
+.tutorialPart4 .teclas p {
+    font-size: 15px;
+    margin-top: 25px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-weight: 400;
+    color: #161C84;
+    transition: 0.3s;
+    text-align: justify;
+}
+
+.tutorialPart4 .teclas p:hover {
+    color: #60B5FF;
+}
+
+/* ÚLTIMA PARTE*/
+
+.tutorialPart5 {
+    height: 100vh;
+    width: 100%;
+    background-image: url(assets/img/fundo.png);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.tutorialPart5 .imagem-piano img {
+    height: 300px;
+    box-shadow: 10px 10px 20px rgba(255, 255, 255, 0.815);
+}
+
+.tutorialPart5 .teclas {
+    width: 50%;
+    height: 200px;
+    font-weight: 400;
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    background-color: white;
+}
+
+.tutorialPart5 .teclas hr {
+    background-color: #60B5FF;
+    width: 300px;
+    height: 4px;
+}
+
+.tutorialPart5 .teclas h2 {
+    margin-top: 30px;
+    color: #161C84;
+    transition: 0.3s;
+}
+
+.tutorialPart5 .teclas h2:hover {
+    color: #BDE0FF;
+}
+
+.tutorialPart5 .teclas p {
+    font-size: 15px;
+    margin-top: 25px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-weight: 400;
+    color: #161C84;
+    transition: 0.3s;
+    text-align: justify;
+}
+
+.tutorialPart5 .teclas p:hover {
+    color: #60B5FF;
+}
+
+/* MENSAGEM */
+
+.apresentacao2 {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.texto2 {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.texto2 .text2 {
+    width: 800px;
+    height: 200px;
+    font-weight: 400;
+    font-size: 20px;
+    border-radius: 10px;
+    margin-right: 10px;
+    margin-bottom: 100px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.121);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+}
+
+.text2 hr {
+    background-color: #60B5FF;
+    width: 380px;
+    height: 4px;
+}
+
+.texto2 .text2 h2 {
+    margin-top: 10px;
+    color: #161C84;
+    transition: 0.3s;
+}
+
+.texto2 .text2 h2:hover {
+    color: #BDE0FF;
+}
+.texto2 .text2 p {
+    margin-top: 25px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-weight: 400;
+    color: #161C84;
+    transition: 0.3s;
+}
+
+.texto2 .text2 p:hover {
+    color: #60B5FF;
+}
+
+/*VIDEO GUIA*/
+
+.tutorialPart6 {
+    height: 100vh;
+    width: 100%;
+    background-image: url(assets/img/fundo.png);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.tutorialPart6 .text {
+    height: 20%;
+    width: 50%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.121);
+}
+
+.tutorialPart6 .imagem-piano video {
+    height: 300px;
+}
+
+
+.tutorialPart6 .text hr {
+    background-color: #60B5FF;
+    width: 300px;
+    height: 4px;
+}
+
+.tutorialPart6 .text h2 {
+    margin-top: 30px;
+    color: #161C84;
+    transition: 0.3s;
+}
+
+.tutorialPart6 .text h2:hover {
+    color: #60B5FF;
+}
+
+/* MENSAGEM */
+
+.apresentacao3 {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.texto3 {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.texto3 .text3 {
+    width: 800px;
+    height: 260px;
+    font-weight: 400;
+    font-size: 20px;
+    border-radius: 10px;
+    margin-right: 10px;
+    margin-bottom: 100px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.121);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+}
+
+.text3 hr {
+    background-color: #60B5FF;
+    width: 380px;
+    height: 4px;
+}
+
+.texto3 .text3 h2 {
+    margin-top: 10px;
+    color: #161C84;
+    transition: 0.3s;
+}
+
+.texto3 .text3 h2:hover {
+    color: #BDE0FF;
+}
+.texto3 .text3 p {
+    margin-top: 25px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-weight: 400;
+    color: #161C84;
+    transition: 0.3s;
+}
+
+.texto3 .text3 p:hover {
+    color: #60B5FF;
+}
+
+#botão1 {
+    margin-right: 40px;
+}
+
+.btn button {
+    background-color: #60B5FF;
+    width: 200px;
+    height: 45px;
+    border-radius: 5px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.5s;
+    margin-bottom: 80px;
+}
+
+.btn button:hover {
+    background-color: #afe1fc;
+}
+
+
+video::-webkit-media-controls-panel {
+    display:none !important;
+}

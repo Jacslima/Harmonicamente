@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+  background-image: url(assets/img/BackgroundProjeto.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.janela {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dash-right {
+  display: flex;
+  width: 80%;
+  height: 90%;
+  margin-top: 20px;
+  background-color: white;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.219);
+  border-radius: 10px;
+}
+
+/* pagina mural */
+
+
+.label-captura {
+  display: flex;
+  justify-content: center;
+}
+
+.dash-right .avisos {
+  width: 100%;
+  color: #60B5FF;
+}
+
+.dash-right .avisos .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.dash-right .avisos .container .div-form {
+  width: 100%;
+}
+
+.dash-right .avisos .container .div-form #form_postagem {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1#EM {
+  margin-top: 30px;
+}
+
+input#titulo {
+  border: none;
+  border-bottom: 1.4px solid #BDE0FF;
+  outline: none;
+  padding-bottom: 7px;
+  width: 80%;
+  margin-bottom: 40px;
+  font-size: 15px;
+}
+
+textarea#textarea_descricao {
+  font-size: 15px;
+  border: 1.4px solid #BDE0FF;
+  outline: none;
+  font-family: 'Poppins', sans-serif;
+}
+
+.dash-right .avisos .div-form label {
+  width: 100%;
+  margin-left: 10rem;
+}
+
+.dash-right .avisos .div-form input {
+  width: 80%;
+  border-radius: 5px;
+}
+
+.dash-right .avisos .div-form textarea {
+  width: 80%;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.dash-right .avisos .div-form button {
+  cursor: pointer;
+  border: 0;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 10px 15px;
+  width: 120px;
+  color: white;
+  background-color: #60B5FF;
+  transition: 0.5s;
+  
+}
+
+.dash-right .avisos .div-form button:hover {
+  background-color: #BDE0FF;
+  
+}
+
+.publicacao {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: stretch;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  border-bottom: 3px solid white;
+  padding: 20px;
+}
+
+.publicacao>*:not(:last-child) {
+  padding: 0 0 10px 0;
+}
+
+.div-results {
+  width: 100%;
+}
+
+.div-results .feed-container {
+  border-radius: 5px;
+  margin-bottom: 80px;
+}
+
+.div-buttons {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.div-buttons>* {
+  margin-left: 30px;
+}

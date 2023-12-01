@@ -9,11 +9,9 @@ email VARCHAR(45) NOT NULL,
 senha CHAR(8) NOT NULL
 )auto_increment = 1;
 
-CREATE TABLE formulario 
-(idFormulario INT primary key auto_increment,
-musicaFavorita varchar(45),
-escala INT,
-concertos char(3),
+CREATE TABLE indicacao
+(idIndicacao INT primary key auto_increment,
+concertoIndicado varchar(45),
 fkUsuario INT, CONSTRAINT fkUsuario foreign key (fkUsuario) references usuario (idUsuario)
 )auto_increment = 10;
 
