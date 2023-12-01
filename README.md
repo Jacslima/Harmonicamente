@@ -1,11 +1,9 @@
 <h3 align="center">
-  <img src="" alt="GrapeTec Logo" height="85"/>
+  <img src="https://imgur.com/a/QXzh6qt" alt="Logo" height="85"/>
 </h3>
 
-# 🍇GrapeTec
-<p>
-A GrapeTec é uma empresa especializada no monitoramento de temperatura voltada para vinícolas. Nosso objetivo é fornecer soluções de alta tecnologia que garantam que as vinícolas mantenham as condições de armazenamento ideais para a produção de vinhos de qualidade. Com nossos sensores avançados e software de análise de dados, auxiliamos as vinícolas na preservação das características distintas de seus vinhos, assegurando que cada safra seja excepcional. A GrapeTec é uma parceira confiável para vinícolas que buscam manter a excelência em cada etapa do processo de produção de vinho.
-</p>
+# 💙 Harmonicamente
+<p> Harmonicamente é mais do que um simples website ou blog; é um espaço dedicado a conscientizar as pessoas sobre a importância do cuidado com a saúde mental, explorando o fascinante mundo da musicoterapia de maneira descontraída e animada! Aqui, mergulhamos nas notas e ritmos que podem transformar vidas, proporcionando insights valiosos sobre como a música pode ser uma aliada poderosa para o bem-estar emocional.</p>
 
 ##  🖥️Site Institucional
 <p>O site institucional da GrapeTec oferece informações sobre nossa expertise em monitoramento de temperatura para vinícolas. Descubra quem somos, como funciona nossa tecnologia, faça orçamentos, cadastre-se e acesse sua conta. </p>
