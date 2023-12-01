@@ -2,7 +2,7 @@
   <img src="Site/web-data-viz/site/public/assets/img/icon(3).png" alt="Logo" height="85"/>
 </h3>
 
-# 💙 Harmonicamente
+# 🎼 Harmonicamente
 <p> Harmonicamente é mais do que um simples website ou blog; é um espaço dedicado a conscientizar as pessoas sobre a importância do cuidado com a saúde mental, explorando o fascinante mundo da musicoterapia de maneira descontraída e animada! Aqui, mergulhamos nas notas e ritmos que podem transformar vidas, proporcionando insights valiosos sobre como a música pode ser uma aliada poderosa para o bem-estar emocional.</p>
 
 ##  🖥️Site Institucional
