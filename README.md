@@ -30,12 +30,9 @@ Um dos diferenciais do Harmonicamente são os nossos fóruns, um espaço acolhed
 
 
 ## 💾 Banco de Dados
-Aqui na Harmonicamente, utilizamos um banco de dados construído com o MySQL. Ele nos ajuda a armazenar e acessar informações de maneira segura e eficaz, o que significa que somos confiável e de alta qualidade e suas informações estão seguras conosco.
-<<<<<<< HEAD
-<br>Consulte nossas tabelas [nesses repositorio.](https://github.com/Jacslima/Harmonicamente/tree/main/Banco%20de%20Dados)
-=======
+<p>Aqui na Harmonicamente, utilizamos um banco de dados construído com o MySQL. Ele nos ajuda a armazenar e acessar informações de maneira segura e eficaz, o que significa que somos confiável e de alta qualidade e suas informações estão seguras conosco.</p>
 <br>Consulte nossas tabelas [nesse repositorio.](https://github.com/Jacslima/Harmonicamente/tree/main/Banco%20de%20Dados)
->>>>>>> 0653f9f5c0dc83889e974e2330a4c471ce110ad4
+
 
 
 ## ⚙ Tecnologias utilizadas
