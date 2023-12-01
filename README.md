@@ -1,5 +1,5 @@
 <h3 align="center">
-  <img src="https://imgur.com/a/QXzh6qt" alt="Logo" height="85"/>
+  <img src="Site/web-data-viz/site/public/assets/img/icon(3).png" alt="Logo" height="85"/>
 </h3>
 
 # 💙 Harmonicamente
